@@ -72,9 +72,3 @@ body, button, input {
     font-family: 'CustomComicSans', 'Comic Sans MS', cursive, sans-serif;
 }
 
-@media (max-width: 600px) {
-    .valentine-img {
-        max-width: 80%;
-    }
-}
-
