@@ -67,3 +67,12 @@ h1 {
   margin: 0 auto;
   border-radius: 10px;
 }
+
+@font-face {
+    font-family: 'CustomComicSans';
+    src: url('fonts/Comic Sans MS.ttf') format('truetype');
+}
+
+body {
+    font-family: 'CustomComicSans', 'Comic Sans MS', cursive, sans-serif;
+}
