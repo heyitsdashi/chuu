@@ -1,0 +1,69 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #ffe6f2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: #ffccdd;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+  animation: popIn 0.5s ease-in-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #ff6699;
+}
+
+.button {
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff66a3;
+  transform: scale(1.1);
+}
+
+.valentine-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.valentine-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
