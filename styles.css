@@ -43,7 +43,7 @@ h1 {
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-family: 'CustomComicSans', 'Comic Sans MS', cursive, sans-serif;
   transition: transform 0.2s, background-color 0.3s;
 }
 
