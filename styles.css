@@ -70,9 +70,10 @@ h1 {
 
 @font-face {
     font-family: 'CustomComicSans';
-    src: url('fonts/Comic Sans MS.ttf') format('truetype');
+    src: url('fonts/comic-sans.ttf') format('truetype');
 }
 
-body {
+body, button, input {
     font-family: 'CustomComicSans', 'Comic Sans MS', cursive, sans-serif;
 }
+
