@@ -80,7 +80,7 @@ body, button, input {
 
 @media (max-width: 600px) {
     .valentine-img {
-        max-width: 90%;
+        max-width: 80%;
     }
 }
 
