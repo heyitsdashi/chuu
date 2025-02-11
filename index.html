@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img src="images/habflower.png" alt="idiot" class="valentine-img" />
+      <h1>Will you be <s>my valentine</s> the awoo to my nya?</h1>
+      <div class="buttons">
+        <button id="yesButton" class="button">YIPEE</button>
+        <button id="noButton" class="button">no</button>
+      </div>
+    </div>
+
+    <script>
+      const noButton = document.getElementById("noButton");
+      const buttonContainer = document.querySelector(".buttons");
+
+      noButton.addEventListener("click", () => {
+        const newButton = document.createElement("button");
+        newButton.classList.add("button");
+        newButton.textContent = ["yes", "yippe", "nyeahhhh"][
+          Math.floor(Math.random() * 3)
+        ];
+        newButton.addEventListener("click", () => showSecretPage());
+        buttonContainer.appendChild(newButton);
+      });
+
+      document
+        .getElementById("yesButton")
+        .addEventListener("click", () => showSecretPage());
+
+      function showSecretPage() {
+        document.body.innerHTML = `
+                <div class="card">
+                    <button id="secretButton" class="button">click here for a secret :3c</button>
+                </div>
+            `;
+
+        document
+          .getElementById("secretButton")
+          .addEventListener("click", () => {
+            document.body.innerHTML = `
+                    <div class="card">
+                        <p>hi i wanted to do something silly for valentines and i think this is pretty good? i actually dont mind coding when it's something fun
+                          like this hehe. (yes i coded this entire card). i hope you enjoy it! but srsly, it's been....almost 9 months? i struggle with words 
+                          when i know other people will be reading them but i hope you rmr that i love you lots and im glad that you're my boyfriend. I'm proud 
+                          of all the work that you've been putting into this relationship and im happy that you're trying for me and for yourself. i can't wait to be 
+                          able to brag about having a rlly cool and handsome boyfriend. chuu! love you <3</p>
+                        <button id="dateButton" class="button">Will you go on a date with me?</button>
+                    </div>
+                `;
+
+            document
+              .getElementById("dateButton")
+              .addEventListener("click", () => {
+                document.body.innerHTML = `
+                        <div class="card">
+                            <img src="images/help.jpg" alt="Monster Hunter" class="valentine-img">
+                            <h1>feb 14th, wanna hunt monters with me? (if i'm finished all my work on time*) see ya in the wilds, hehe >:3 love you!! <3 ...could i also 
+                              interest you in watching a movie with me :></h1>
+                        </div>
+                    `;
+              });
+          });
+      }
+    </script>
+  </body>
+</html>
