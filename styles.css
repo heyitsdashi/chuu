@@ -70,7 +70,7 @@ h1 {
 
 @font-face {
     font-family: 'CustomComicSans';
-    src: url('fonts/comic-sans.ttf') format('truetype');
+    src: url('fonts/Comic Sans MS.ttf') format('truetype');
 }
 
 body, button, input {
